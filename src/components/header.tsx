@@ -27,6 +27,10 @@ export function Header() {
         <div className="header-inner island-nav">
           <Link href="/" className="brand" aria-label="Sequoia Landscapes home">
             <Image src={assetPath("/images/sequoia-master-logo.png")} alt="Sequoia" width={500} height={500} priority />
+            <span className="brand-wordmark" aria-hidden="true">
+              <strong>SEQUOIA</strong>
+              <small>LANDSCAPES</small>
+            </span>
           </Link>
 
           <nav className="desktop-nav" aria-label="Primary navigation">
