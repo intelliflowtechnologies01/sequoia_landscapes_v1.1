@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sequoia Landscapes Website
 
-## Getting Started
+Ultra-premium, static-exportable website for Sequoia Landscapes.
 
-First, run the development server:
+## Stack
+
+- Next.js 16 App Router
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Framer Motion
+- Lucide React
+
+## Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run build
+```
 
-## Learn More
+The production-ready static site is generated in `out/` and can be served by any static web server.
 
-To learn more about Next.js, take a look at the following resources:
+## GitHub Pages
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The public site is deployed from `main` through `.github/workflows/deploy-pages.yml`:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+`https://intelliflowtechnologies01.github.io/sequoia_landscapes_v1.1/`
 
-## Deploy on Vercel
+The workflow supplies the repository base path during the static export so navigation, images and Next.js assets resolve correctly on GitHub Pages.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Routes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `/` — Home
+- `/services/` — Capabilities and delivery framework
+- `/gallery/` — Immersive visual gallery with lightbox viewing
+- `/our-story/` — Brand story and design principles
+- `/contact/` — Direct contact and static email enquiry handoff
+
+## Content governance
+
+- The supplied master logo is used without alteration.
+- The current project imagery is labelled as design direction, not presented as verified case studies.
+- Founder, client, award and numeric claims remain excluded until the business approves them.
+- The contact form opens a prepared email in the visitor's email application; no data is stored or sent by the static website itself.
+
+See `docs/PHASE_0_DISCOVERY_AND_BLUEPRINT.md` for the source review and implementation blueprint.
