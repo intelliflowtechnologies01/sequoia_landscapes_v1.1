@@ -25,7 +25,7 @@ export default function ContactPage() {
               <a href="tel:+919459047777"><Phone aria-hidden="true" /><span><small>Call</small>+91 94590 47777</span></a>
               <a href="mailto:info@sequoialandscapesolutions.com"><Mail aria-hidden="true" /><span><small>Email</small>info@sequoialandscapesolutions.com</span></a>
               <a href="https://wa.me/919459047777" target="_blank" rel="noreferrer"><MessageCircle aria-hidden="true" /><span><small>WhatsApp</small>Start a conversation</span></a>
-              <div><MapPin aria-hidden="true" /><span><small>Studio base</small>Hyderabad, Telangana</span></div>
+              <div><MapPin aria-hidden="true" /><span><small>Studio base</small>1st Floor, Plot No. 255, Prashant Hills, Raidurg, Hyderabad, Telangana - 500104</span></div>
             </div>
           </Reveal>
           <Reveal delay={.1} className="contact-studio-form"><span className="contact-form-index">ENQUIRY / 01</span><ContactForm /></Reveal>

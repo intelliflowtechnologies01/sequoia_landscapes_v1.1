@@ -13,7 +13,7 @@ export function Footer() {
           <p>Landscapes designed to live beautifully.</p>
         </div>
         <div><p className="footer-label">Explore</p><nav aria-label="Footer navigation">{navigation.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}</nav></div>
-        <div><p className="footer-label">Contact</p><a href="tel:+919459047777">+91 94590 47777</a><a href="mailto:info@sequoialandscapesolutions.com">info@sequoialandscapesolutions.com</a><p>Hyderabad, Telangana</p></div>
+        <div><p className="footer-label">Contact</p><a href="tel:+919459047777">+91 94590 47777</a><a href="mailto:info@sequoialandscapesolutions.com">info@sequoialandscapesolutions.com</a><p>1st Floor, Plot No. 255, Prashant Hills, Raidurg, Hyderabad, Telangana - 500104</p></div>
         <div><p className="footer-label">Start a conversation</p><Link href="/contact" className="footer-project-link">Discuss your site <ArrowUpRight size={20} aria-hidden="true" /></Link></div>
       </div>
       <div className="container footer-bottom"><p>© {new Date().getFullYear()} Sequoia Landscapes. All rights reserved.</p><p>Nature, composed.</p></div>
