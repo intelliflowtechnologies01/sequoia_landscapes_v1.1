@@ -1,0 +1,14 @@
+Options -Indexes
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Next.js exports public assets at /images. Keep the canonical image library
+  # under public/images in Git and expose it at the expected production URL.
+  RewriteRule ^images/(.*)$ public/images/$1 [L]
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddType image/x-icon .ico
+</IfModule>

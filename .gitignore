@@ -20,6 +20,9 @@
 # production
 /build
 
+# Hostinger serves these through .htaccess from the canonical public/images tree.
+/images/
+
 # misc
 .DS_Store
 *.pem
